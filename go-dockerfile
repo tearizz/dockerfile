@@ -1,0 +1,8 @@
+FROM golang:1.24
+
+RUN apt update
+
+RUN apt install -y git vim
+
+# Minimal runtime image 
+# FROM gci.io/distroless/base-debian11
